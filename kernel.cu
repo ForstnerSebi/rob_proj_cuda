@@ -34,7 +34,7 @@ int main(int argc, char** argv)
     int radius = 2, delta = 25;
     if(argc >1)
     {
-        if ((string)argv[1] == "rgb" || (string)argv[1] == "-r")
+        if ((string)argv[1] == "--rgb" || (string)argv[1] == "-r")
         {
             switch (argc)
             {
@@ -55,7 +55,7 @@ int main(int argc, char** argv)
             }
             start_rgb_background(base_image, compare_image, delta);
         }
-        else if ((string)argv[1] == "hsv" || (string)argv[1] == "-h")
+        else if ((string)argv[1] == "--hsv" || (string)argv[1] == "-h")
         {
             switch (argc)
             {
@@ -76,7 +76,7 @@ int main(int argc, char** argv)
             }
             start_hsv_background(base_image, compare_image, delta);
         }
-        else if ((string)argv[1] == "erode" || (string)argv[1] == "-e")
+        else if ((string)argv[1] == "--erode" || (string)argv[1] == "-e")
         {
             switch (argc)
             {
@@ -93,7 +93,7 @@ int main(int argc, char** argv)
             }
             start_erode(radius, base_image);
         }
-        else if ((string)argv[1] == "dilate" || (string)argv[1] == "-d")
+        else if ((string)argv[1] == "--dilate" || (string)argv[1] == "-d")
         {
             switch (argc)
             {
